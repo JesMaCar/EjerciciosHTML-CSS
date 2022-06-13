@@ -1,0 +1,27 @@
+
+body {
+    display: flex;
+}
+.seccion-lateral {
+    background-color: aquamarine;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5px;
+}
+
+.seccion-main {
+    background-color: aqua;
+    flex-grow: 1;    
+}
+
+@media (max-width: 640px) {
+    .seccion-lateral {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    body {
+        flex-direction: column-reverse;
+    }
+}
